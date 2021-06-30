@@ -1,1 +1,64 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  /* background-color: #1a2229; */
+
+  background-image: url("https://blog.redbus.co/wp-content/uploads/2019/07/viejes.jpg");
+}
+
+#logo {
+  width: 12rem;
+  margin-left: 7rem;
+
+}
+
+.myNavbar {
+  background-color: #080808f1 !important;
+}
+
+.myLoading {
+  margin-top: 10rem;
+  color: blue;
+}
+
+.myCard {
+  cursor: pointer;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.myCard:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.profileHotel{
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.568);
+}
+
+.nameHotel{
+  color: rgb(244, 244, 248);
+}
+
+.myRating{
+  color:yellow;
+}
+
+.available{
+  color:rgb(6, 245, 6);
+}
+
+.myRed{
+  color: red;
+}
+
+.phone{
+  color: rgb(117, 227, 255);
+}
+
+.ofertTitle{
+  color: rgb(243, 208, 169);
+  margin-left: 2rem;
+  font-weight: bold;
+}
+
+#myHr{
+  background-color: red;
+}

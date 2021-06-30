@@ -1,0 +1,11 @@
+<div *ngIf="error" class="alert alert-danger">
+  <h3>Error</h3>
+  <p>{{ error }}</p>
+</div>
+
+<div *ngIf="loading" class="text-center myLoading">
+  <i class="fas fa-spinner fa-pulse fa-6x"></i>
+</div>
+
+<app-cards [items]="hotelsList"></app-cards>
+

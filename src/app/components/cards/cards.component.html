@@ -1,0 +1,44 @@
+<div class="album">
+  <div class="container">
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+      <div (click)="ShowHotel( item )" *ngFor="let item of items" class="col-md-4">
+
+        <div class="card mb-4 myCard">
+          <div class="card h-100 p-3 ">
+            <div class="card-title d-flex justify-content-between text-primary">
+
+              <h5 class="card-title">{{item.hotel.name}} </h5>
+              <h6 class="d-flex justify-content-between align-items-center text-warning">{{item.hotel.rating}}
+                <i class="far fa-star"></i>
+              </h6>
+
+            </div>
+
+            <div class="card-body">
+
+                <p *ngIf="(item.available === true)">Available:
+                  <i  class="fas fa-check text-success"></i>
+                  <i *ngIf="(item.available === false)" class="fas fa-times text-danger"></i>
+                </p>
+
+                  <p class="card-text">Address Hotel: {{item.hotel.address.lines}}, {{item.hotel.address.postalCode}},
+                    {{item.hotel.address.cityName}}</p>
+
+              </div>
+
+              <hr  class="bg-info"/>
+                <p class="card-text text-info align-self-center">Phone: {{item.hotel.contact.phone}}</p>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>

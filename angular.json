@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "Tecnoturis"
+  "defaultProject": "Tecnoturis",
+  "cli": {
+    "analytics": false
+  }
 }
